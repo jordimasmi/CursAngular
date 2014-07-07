@@ -1,0 +1,49 @@
+﻿<div class="device-port-config">
+    <div>
+        <label>Port:</label>
+        <span >{{config.port.description}}</span>
+    </div>
+
+    <div ng-if="config.port.portType == 0"> <!-- Serial Port --> 
+        <div>
+            <label>COM:</label> 
+            <span>{{config.port.numPort}}</span>
+        </div>
+        <div>
+            <label>Speed:</label> 
+            <span>{{config.port.speed}}</span>
+        </div>
+        <div>
+            <label>Parity:</label> 
+            <span>{{config.port.parity}}</span>
+        </div>
+        <div>
+            <label>Length:</label> 
+            <span>{{config.port.length}}</span>
+        </div>
+        <div>
+            <label>Stop Bits:</label> 
+            <span>{{config.port.stopBits}}</span>
+        </div>
+    </div>
+
+    <div ng-if="config.port.portType == 1"> <!-- TCP Port --> 
+        
+    </div>
+
+    <div ng-if="config.port.portType == 2"> <!-- Virtual Input Port --> 
+        <div>
+            <label>Data:</label> 
+            <span style="font-size: 0.8em" >{{config.port.data}}</span> 
+        </div>        
+        <div>
+            <label>Polling Interval:</label> 
+            <span>{{config.port.pollingInterval}}</span>
+        </div>        
+        <div>
+            <label>Port number:</label> 
+            <span>{{config.port.portNumber}}</span>
+        </div>        
+    </div>
+
+</div>

@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="awfApp">
+    <head>
+        <meta charset="utf-8">
+        <title>{{adaApp.appTitle}}</title>
+        <link rel="shortcut icon" href="/Content/awf/images/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Ada Web Framework">
+        <meta name="author" content="Delsys Ada">
+
+        <!-- ************ AWF StyleSheets ************ -->
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="Content/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/awf/bootstrap-additions.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/awf/angular-motion.min.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/ng-grid.min.css">
+        <link rel="stylesheet" type="text/css" href="Content/css/select2.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/css/select2-bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/css/codemirror.css"/>
+        <link rel="stylesheet" type="text/css" href="Content/css/codemirror-theme/monokai.css"/>
+
+        <link rel="stylesheet" type="text/css" href="Content/awf/awf.css"/>
+        
+        <!-- Awf --> 
+        <link rel="stylesheet" type="text/css" href="Content/css/awfdirectives.css"/>
+        
+        <!-- Icons --> 
+        <link rel="stylesheet" href="Content/awf/glyphicons.css"/>
+
+        <!-- Miscelanea --> 
+        <link rel="stylesheet" href="Content/Prettify/prettify.css"/>
+
+        <!-- **************************************** -->
+        
+        
+        <!-- App CSS goes here --> 
+        <link rel="stylesheet" href="Content/app/app.css"/> 
+    </head>
+    <body class="background">
+        <div ng-include="'/Content/awf/views/spinner.html'"></div>
+        <div data-ng-include="'Content/awf/views/header.html'"></div>
+        
+        <div class="container-fluid">
+            <div class="am-fade-and-scale" ui-view></div>
+        </div>
+        
+        <div data-ng-include="'Content/awf/views/footer.html'"></div>
+
+        <!-- ************ AWF Scripts ************ -->
+        <!-- Angular -->
+        <script src="scripts/jquery-2.0.3.min.js"></script> 
+        <script src="scripts/jquery-ui-1.10.4.custom.min.js"></script>
+        
+        <script src="scripts/angular.min.js"></script>
+        <script src="scripts/i18n/angular-locale_ca-es.js"></script> 
+        <script src="scripts/angular-resource.min.js"></script>
+        <script src="scripts/angular-cookies.min.js"></script>
+        <script src="scripts/angular-animate.min.js"></script>
+        <script src="scripts/angular-sanitize.min.js"></script>
+
+        <!-- Twitter Bootstrap -->
+        <script src="scripts/bootstrap.min.js"></script>
+
+        <!-- GUI -->
+        <script src="scripts/prefixfree.min.js"></script>
+        <script src="scripts/spin.min.js"></script>
+        <script src="scripts/select2.min.js"></script>
+        <script src="scripts/AngularUI/angular-nestedSortable.js"></script>
+        <script src="scripts/AngularUI/sortable.js"></script>
+        <script src="Scripts/ui-bootstrap-0.10.0.min.js"></script>
+        <script src="scripts/codemirror/codemirror.js"></script>
+        <script src="scripts/codemirror/clike.js"></script>
+
+        <!-- Tools -->
+        <script src="scripts/awf/localStorageModule.js"></script>
+        <script src="scripts/underscore.min.js"></script> 
+        <script src="scripts/restangular.js"></script>
+        <script src="scripts/Prettify/prettify.js"></script>
+
+        <!-- Angular directives -->
+        <script src="scripts/angular-strap.min.js"></script> 
+        <script src="scripts/angular-strap.tpl.min.js"></script> 
+        <script src="scripts/AngularUI/ui-router.min.js"></script> 
+        <script src="scripts/ui-bootstrap-tpls-0.10.0.min.js"></script> 
+        <script src="scripts/awf/directives/angular-spinner.min.js"></script>
+        <script src="scripts/ng-grid-2.0.7.min.js"></script>
+        <script src="scripts/awf/angular-local-storage.js"></script>
+        <script src="scripts/awf/directives/select2.js"></script>
+        <script src="scripts/ui-codemirror.js"></script>
+
+        <!-- DateTime --> 
+        <script src="scripts/moment-with-langs.min.js"></script>
+        <script src="scripts/awf/daterangepicker.js"></script>
+        <script src="scripts/awf/ng-bs-daterangepicker.js"></script>
+
+        <!-- ACF Libs --> 
+        <script src="scripts/awf/modernizr-custom-2.0.min.js"></script>
+        <script src="scripts/awf/alchemy-client.js"></script>
+        <script src="scripts/awf/adaacf.js"></script>
+
+        <!-- Awf -->
+        <script src="scripts/awf/awf.js"></script>
+        <script src="scripts/awf/services/awfcoreservices.js"></script>
+        <script src="scripts/awf/services/awferrorservice.js"></script>
+        <script src="scripts/awf/services/awfbusinessservices.js"></script>
+        <script src="scripts/awf/directives/awfdirectives.tpl.js"></script>
+        <script src="scripts/awf/directives/awfdirectives.js"></script>
+        <!-- **************************************** -->
+
+        <!-- App Scripts goes here --> 
+        <script src="scripts/app/app.js"></script>
+        <script src="scripts/app/controllers/home.js"></script>
+        <script src="scripts/app/controllers/acf.js"></script>
+        <script src="scripts/app/controllers/docs.js"></script>
+        <script src="scripts/app/controllers/samples.js"></script>
+        <script src="scripts/app/controllers/samples.sampleCrudController.js"></script>
+        <script src="scripts/app/services/sampleService.js"></script>
+        <script src="scripts/app/controllers/testprint.js"></script>
+        <script src="scripts/app/controllers/reports.js"></script>
+        
+
+    </body>
+</html>

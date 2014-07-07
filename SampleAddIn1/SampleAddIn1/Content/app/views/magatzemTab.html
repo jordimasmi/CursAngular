@@ -1,0 +1,46 @@
+﻿<div>
+    <h3>soc el tab de magatzem</h3>   
+</div>
+
+<div>
+    
+    <select ui-select2="view.select2Options" ng-model="view.currentArticulo" data-placeholder="Seleccione articulo" >
+        <option value=""></option>
+        <option ng-repeat="articulo in data.articulos" value="{{articulo.pk}}">{{articulo.description}}</option>
+    </select>    
+    
+    <button class="btn btn-primary" ng-click="loadArticulosClick()">Load Articulos</button>
+             
+</div>
+
+<div>
+    {{view.currentArticulo}}
+</div>    
+
+<div>
+    {{data.datosArticuloSeleccionado.code}} 
+    {{data.datosArticuloSeleccionado.description}}
+</div>    
+
+<br/>
+
+<div>
+    <pre>{{data.selectedArticles[0].description}}</pre>
+</div>
+
+<!--
+    <div>
+        <pre>
+    <ul ng-repeat="item in data.selectedArticles">
+        <li>{{item.code}}</li>
+      </ul>
+    </pre>
+    </div>
+    <br/>
+    -->
+
+<div class="grid-articles" ng-grid="form.gridOptions"></div>   
+
+    
+
+

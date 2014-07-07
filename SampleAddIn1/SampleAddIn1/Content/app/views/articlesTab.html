@@ -1,0 +1,14 @@
+﻿<div>
+    <h3>soc el tab articles</h3>   
+</div>
+
+<div>
+    
+    <select ui-select2="select2Options" ng-model="select2" data-placeholder="Pick a number" >
+        <option value=""></option>
+        <option ng-repeat="number in range" value="{{number.value}}">{{number.text}}</option>
+    </select>    
+
+</div>
+
+

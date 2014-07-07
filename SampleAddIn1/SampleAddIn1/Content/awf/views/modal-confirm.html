@@ -1,0 +1,15 @@
+﻿<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" style="padding:10px" class="close" ng-click="close(false)">&times;</button>
+            <div style="font-size: 22px; margin-top:10px;margin-left: 10px;" >
+                <span class="glyphicon glyphicon-question-sign"></span>
+                <span class="modal-body" ng-bind="content"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" ng-click="close(false)">No</button>
+                <button type="button" class="btn btn-danger" ng-click="close(true)">Si</button>
+            </div>
+        </div>
+    </div>
+</div>

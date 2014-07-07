@@ -1,0 +1,11 @@
+﻿    
+<ul class="dropdown-menu" role="menu" style="max-width: 100px;">
+    <li role="presentation"><a href="/"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+    <li><a role="menuitem" href="/help/support"><span class="glyphicon glyphicon-question-sign"></span> Ayuda</a></li>
+    <li ng-if="session && session.session.activeUser.isAdminAda" class="divider"></li>
+    <li ng-if="session && session.session.activeUser.isAdminAda"><a href="/index.html#/permissions"><span class="glyphicon glyphicon-lock"></span> Permisos</a></li>
+    <li ng-if="session" class="divider"></li>
+    <li ng-if="session"><a href="/index.html#/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+</ul>
+
+

@@ -1,0 +1,26 @@
+﻿<h3>Permisos de usuario</h3>
+<hr/>
+
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="input1" class="col-sm-1 control-label">Usuario:</label>
+        <select  id="input1" class="col-sm-3" ui-select2="form.selectUsersOptions" ng-model="form.selectedUser" data-placeholder="Seleccione un usuario" >
+            <option value=""></option>
+            <option ng-repeat="user in data.users" value="{{user.pk}}">{{user.description}}</option>
+        </select>            
+        <div ng-show="form.selectedUser">
+            <label for="input2" class="col-sm-1 control-label">App-Roles:</label>
+            <input ng-change="rolesChanged()" class="col-sm-6" type="hidden" ui-select2="form.appRolSelectOptions" ng-model="form.selectedAppRoles" data-placeholder="Seleccione los roles" />     
+        </div>
+    </div>
+</form>
+
+<div class="row">
+    <div class="col-sm-1"/>
+    <div class="col-sm-1">
+        <button class="btn btn-info center" ng-click="goHome()"><i class="glyphicon glyphicon-home"></i> &nbsp; Volver</button>
+    </div>
+    <div class="col-sm-1">
+        <button class="btn btn-success center" ng-click="saveRoles()"><i class="glyphicon glyphicon-floppy-saved"></i> &nbsp; Guardar</button>
+    </div>
+</div>

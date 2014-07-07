@@ -1,0 +1,35 @@
+﻿<header ng-show="(session && adaApp.desktop.headerVisible) || !adaApp.doLogin ">
+    <div class="row" >
+        <div class="col-xs-6 col-sm-4">
+            <a href="/">
+                <img class="pull-left header-logo" ng-src="{{adaApp.desktop.logo}}"/>
+            </a>
+            <div class="header-label visible-md visible-lg">
+                <span>{{adaApp.customerName}}</span>
+            </div>
+        </div>            
+        <div class="hidden-xs col-sm-4 header-label center" ng-if="adaApp.desktop.desktopOptions">
+            <a  data-placement="bottom" data-type="inverse" data-title="<h5>Cambio de escritorio</h5>" bs-tooltip="" >{{adaApp.desktop.currentDesktopName}}</a>
+        </div>            
+        <div class="col-xs-6 col-sm-4" ng-show="adaApp.desktop.desktopOptions">
+            <div class="pull-right modules-icon">
+                <button type="button" data-placement="bottom" class="btn btn-link" data-template="Content/awf/views/modules-menu.html" data-animation="am-flip-x" bs-popover=""  >
+                    <span class="glyphicon glyphicon-align-justify white header-icon"></span>
+                </button>
+                <button type="button" data-placement="bottom" class="btn btn-link header-user " data-template="Content/awf/views/user-menu.html" data-animation="am-flip-x" bs-dropdown="">
+                    <div class="row">
+                        <span class="glyphicon glyphicon-user white header-icon col-sm-6"></span>
+                        <span class="hidden-xs col-sm-6" >{{session.firstName}}</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-8" ng-hide="adaApp.desktop.desktopOptions">
+            <div class="pull-right modules-icon">
+                <a type="button" href="/index.html#/logout" data-placement="bottom" class="btn btn-link" data-animation="am-flip-x" bs-popover=""  >
+                    <span class="glyphicon glyphicon-log-out white header-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>

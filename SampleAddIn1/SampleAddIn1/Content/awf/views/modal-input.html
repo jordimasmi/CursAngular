@@ -1,0 +1,22 @@
+﻿<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" style="padding:10px" class="close" ng-click="close()">&times;</button>
+            <div style="font-size: 22px; margin-top:10px;margin-left: 10px;" >
+                <span class="modal-body" >
+                    <form class="form-horizontal" role="form">
+                        <label class="control-label" for="inputValue">{{message}}</label>
+                        <div class="col-sm-12" >
+                            <input ng-keypress="inputKeyPressed($event)" awf-init-focus class="form-control" type="text" id="inputValue" ng-model="inputValue" />
+                        </div>
+                    </form>
+
+                </span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" ng-click="close()">Cancelar</button>
+                <button ng-show="inputValue" type="button" class="btn btn-success" ng-click="close(inputValue)">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>

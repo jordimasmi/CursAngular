@@ -1,0 +1,37 @@
+﻿
+<link rel="stylesheet" type="text/css" href="Content/awf/login.css" >
+<link rel="stylesheet" type="text/css" href="Content/app/custom-login.css" >
+
+<div class="btn-group submenu" ng-show="allowChangeSettings">
+    <button type="button" class="btn btn-link btn-submenu" title="Configuración de terminal" data-placement="bottom-left" data-content="{{popover.content}}" data-template="/Content/awf/views/login-settings.html" data-animation="am-flip-x" bs-popover >
+        <span class="glyphicon glyphicon-align-justify settings-icon"></span>
+    </button>
+</div>
+
+<div id="login" class="login-bar">
+    <div class="row">
+        <div class="col-xs-1 col-sm-4"></div>
+        <div class="col-xs-10 col-sm-4">
+            <form class="form-horizontal form-signin" action="" >
+                <div class="form-group">
+                    <img class="img-rounded img-responsive login-logo" ng-src="{{adaApp.desktop.logo}}">
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <input awf-init-focus awf-select-on-click ng-model="userName" class="form-control" type="text" id="user" placeholder="Usuario"></input>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        <input ng-model="password" type="password" class="form-control" id="password" placeholder="Contraseña"></input>
+                    </div>
+                </div>
+                <div class="form-group login-button">
+                    <button ng-click="login()" id="entrar" class="btn btn-lg btn-primary btn-block" type="submit"> Entrar <span ng-class="loginButtonClass"></span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

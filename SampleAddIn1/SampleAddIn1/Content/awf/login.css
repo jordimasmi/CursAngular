@@ -1,0 +1,127 @@
+﻿
+body {
+    background-image:url("images/login-background.jpg");
+}
+
+.login-bar {
+    background: rgba(89, 88, 86, 0.4);
+    position: relative;
+    top: 10%; 
+    -webkit-transform: translateY(10%);
+    -moz-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    -o-transform: translateY(10%);
+    transform: translateY(10%);
+    border-radius: 10px; 
+}
+
+.login-logo {
+    margin-left: auto; 
+    margin-right: auto;
+    background: white;
+    padding: 5px 15px; 
+}
+
+.form-signin {
+    padding: 15px;
+    margin: 0 auto;
+}
+
+
+.login-button {
+    margin-top: 30px;     
+}
+
+.login-icon {
+    margin-left: 10px;
+}
+
+
+.submenu{
+    position:absolute;
+    top: 5px;
+    left:5px;
+}
+
+.btn-submenu {
+    color: black;
+}
+
+/* Settings */
+
+.settings-title {
+    text-align: center;
+    font-size: 1.2em; 
+}
+
+.form-settings {
+    font-size: 0.9em;
+    padding: 10px;
+    height: auto;
+    background: #eaeaea;
+} 
+
+.settings-icon {
+    font-size: 2.0em;     
+}
+
+.settings-popover {
+    max-width: 400px; 
+    width: 350px;
+    margin-left: 20px;
+}
+
+.active-directory-fieldset {
+    border: gray solid 1px;
+    background: #d6d6d6;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px; 
+    padding: 5px;
+    border-radius: 4px; 
+    box-shadow: #555555 2px 2px 2px; 
+}
+
+/* Spinner   */
+
+.spin {
+    -webkit-animation: spin .7s infinite linear;
+    -moz-animation: spin .7s infinite linear;
+    -o-animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    animation: spin .7s infinite linear;
+    -webkit-transform-origin: 50% 58%;
+    -moz-transform-origin:50% 58%;
+    -o-transform-origin:50% 58%;
+    -ms-transform-origin:50% 58%;
+    transform-origin:50% 58%;
+    /* IE 9 */
+}
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

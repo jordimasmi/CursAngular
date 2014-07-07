@@ -1,0 +1,15 @@
+﻿<div class="popover settings-popover" >
+    <div class="arrow"></div>
+    <div class="popover-title settings-title">Listado de módulos</div>
+
+    <div ng-controller="awfDesktopController" class="row small-modules">
+        <div data-ng-repeat="module in adaModules" class="col-xs-push-2 col-xs-7 col-md-push-0 col-md-4">
+            <div class="thumbnail small-module-button"  >
+                <a data-ui-sref="{{module.state}}" >
+                    <img class="awf-module-image img-responsive" data-ng-src="{{ module.img }}" alt="module.title"/>
+                    <span  >{{ module.title }}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

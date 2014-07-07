@@ -1,0 +1,15 @@
+﻿<div ng-controller="awfDesktopController" class="row" >
+    <div data-ng-repeat="module in adaModules" class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail module-button"  >
+            <a ng-if="!module.url" data-ui-sref="{{module.state}}" >
+                <img class="awf-module-image" data-ng-src="{{ module.img }}" alt="module.title"/>
+                <h4 >{{ module.title }}</h4>
+            </a>
+            <a ng-if="module.url" href="{{module.url}}" >
+                <img class="awf-module-image" data-ng-src="{{ module.img }}" alt="module.title"/>
+                <h4 >{{ module.title }}</h4>
+            </a>
+        </div>
+    </div>
+</div>
+

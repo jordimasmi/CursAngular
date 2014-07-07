@@ -1,0 +1,71 @@
+﻿<div class="popover popover-device-config" >
+    <div class="arrow"></div>
+    <div class="popover-title device-config-title">
+        <div >
+            <div>Device:( {{config.code}} )</div> 
+            <label> {{config.deviceClass.description}} : {{config.description}} </label>
+        </div>
+        <div class="pull-right">
+            <a class="btn btn-primary"><span class="glyphicon glyphicon-edit"></span></a>    
+        </div>
+        
+    </div>
+    <div class="popover-content">
+        <div>
+            <label>Type:</label>
+            <span>{{config.deviceType}}</span>
+        </div>
+        <div>
+            <label>Connect:</label>
+            <span>{{config.connect}}</span>
+        </div>        
+        <!-- Server Parameters -->         
+        <div>
+            <div >
+                <label >Server:</label>
+                <span >{{config.serverHost || '????'}}:{{config.serverPort}}</span>
+            </div>
+        </div>
+            <div class="row">
+                <div class="weight-indicator-config col-md-5 col-md-push-1" ng-show="config.deviceClass.id == 0">
+                    <div>
+                        <label>Continuous Weight:</label>
+                        <span>{{config.continousWeight}}</span>
+                    </div>
+                    <div>
+                        <label>Stable Weight:</label>
+                        <span>{{config.stableWeight}}</span>
+                    </div>
+                    <div>
+                        <label>Num Decimals:</label>
+                        <span>{{config.numDevimals}}</span>
+                    </div>
+                    <div>
+                        <label>Num zeroCross:</label>
+                        <span>{{config.zeroCross}}</span>
+                    </div>
+                    <div>
+                        <label>Stability index:</label>
+                        <span>{{config.stabilityIndex}}</span>
+                    </div>
+                    <div>
+                        <label>Stability threshold:</label>
+                        <span>{{config.stabilityThreshold}}</span>
+                    </div>
+                    <div>
+                        <label>Polling:</label>
+                        <span>{{config.polling}}</span>
+                    </div>
+                    <div>
+                        <label>Polling interval:</label>
+                        <span>{{config.pollingInterval}}</span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-md-push-1" ng-include="'/Content/awf/views/templates/device-port-config.html'">
+                </div>
+            </div>
+    </div>
+</div>
+
+

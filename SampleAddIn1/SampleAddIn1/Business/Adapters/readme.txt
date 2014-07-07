@@ -1,0 +1,1 @@
+﻿- Adapters especialitzats del portal.
